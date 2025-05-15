@@ -1,0 +1,275 @@
+<!doctype html>
+<html
+  lang="es"
+  data-astro-cid-37fxchfa=""
+  style="
+    --primaryColor: #3a7bd5;
+    --primaryGradient: linear-gradient(to right, #3a7bd5, #00d2ff);
+    --secondaryColor: #2c3e50;
+    --accentColor: #ff6b6b;
+    --lightBg: #f9f9f9;
+    --darkText: #333;
+    --lightText: #fff;
+  ">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inicio - True Parenting</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <!-- Incluir el widget de identidad de Netlify -->
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    <style>
+      :root {
+        --primary-color: var(--primaryColor);
+        --primary-gradient: var(--primaryGradient);
+        --secondary-color: var(--secondaryColor);
+        --accent-color: var(--accentColor);
+        --light-bg: var(--lightBg);
+        --dark-text: var(--darkText);
+        --light-text: var(--lightText);
+        --box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      }
+      @keyframes float {
+        0%,
+        to {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-5px);
+        }
+      }
+    </style>
+  </head>
+  <body
+    data-astro-cid-37fxchfa=""
+    style="
+      --primaryColor: #3a7bd5;
+      --primaryGradient: linear-gradient(to right, #3a7bd5, #00d2ff);
+      --secondaryColor: #2c3e50;
+      --accentColor: #ff6b6b;
+      --lightBg: #f9f9f9;
+      --darkText: #333;
+      --lightText: #fff;
+    ">
+    <div
+      id="wrap"
+      data-astro-cid-37fxchfa=""
+      style="
+        --primaryColor: #3a7bd5;
+        --primaryGradient: linear-gradient(to right, #3a7bd5, #00d2ff);
+        --secondaryColor: #2c3e50;
+        --accentColor: #ff6b6b;
+        --lightBg: #f9f9f9;
+        --darkText: #333;
+        --lightText: #fff;
+      ">
+      <header id="top">
+        <div id="header">
+          <div id="header-side">
+            <div id="languages">
+              <button class="menu-icon" id="btn-spa">SPA</button> <button class="menu-icon" id="btn-swe">SWE</button>
+            </div>
+          </div>
+          <div id="header-main">
+            <div id="title">
+              <a href="inicio.html"><h1 id="site-title">TRUE PARENTING</h1></a>
+            </div>
+            <nav id="menu">
+              <ul>
+                <li class="menu-item"><a href="inicio.html">Inicio</a></li>
+                <li class="menu-item"><a href="quienesSomos.html">Quiénes somos</a></li>
+                <li class="menu-item"><a href="articulos.html">Artículos</a></li>
+                <li class="menu-item"><a href="retosDeLectura.html">Retos de Lectura</a></li>
+                <li class="menu-item"><a href="contacto.html">Contacto</a></li>
+                <li class="menu-item"><a href="nuestroPatreon.html">Nuestro Patreon</a></li>
+              </ul>
+            </nav>
+          </div>
+          <button id="menu-opener" class="mobile-menu-opener">☰</button>
+          <button id="subscribe-btn" class="subscribe-button">Suscribirse</button>
+        </div>
+      </header>
+      <script type="module">
+        function a(e) {
+          localStorage.setItem("language", e), c(e);
+        }
+        function c(e) {
+          const t = window.location.pathname;
+          let n;
+          e === "sv" ? (n = t.replace(".html", "-sv.html")) : (n = t.replace("-sv.html", ".html")),
+            (window.location.href = n);
+        }
+        function o(e) {
+          document.querySelectorAll(".menu-item a").forEach((n) => {
+            const s = n.getAttribute("href");
+            let l;
+            e === "sv" ? (l = s.replace(".html", "-sv.html")) : (l = s.replace("-sv.html", ".html")),
+              n.setAttribute("href", l);
+          });
+        }
+        document.addEventListener("DOMContentLoaded", () => {
+          const e = localStorage.getItem("language") || "es";
+          o(e);
+          const t = window.location.pathname;
+          ((e === "sv" && !t.includes("-sv.html")) || (e === "es" && t.includes("-sv.html"))) && c(e);
+        });
+        document.getElementById("btn-spa").addEventListener("click", () => a("es"));
+        document.getElementById("btn-swe").addEventListener("click", () => a("sv"));
+        document.getElementById("menu-opener").addEventListener("click", function () {
+          const e = document.querySelector("#menu ul");
+          e.style.display = e.style.display === "flex" ? "none" : "flex";
+        });
+      </script>
+      <div
+        id="main"
+        data-astro-cid-37fxchfa=""
+        style="
+          --primaryColor: #3a7bd5;
+          --primaryGradient: linear-gradient(to right, #3a7bd5, #00d2ff);
+          --secondaryColor: #2c3e50;
+          --accentColor: #ff6b6b;
+          --lightBg: #f9f9f9;
+          --darkText: #333;
+          --lightText: #fff;
+        ">
+  
+        <div id="bigbar-overlay">
+  <h1 class="bigbar-h1" id="hero-title"></h1>
+  <p class="moze-large" id="hero-subtitle" style="color: var(--light-text); text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3)">
+  </p>
+  <a href="#" class="moze-button-large" id="hero-button"></a>
+</div>
+        
+        <div id="selecciona-tu-programa" data-astro-cid-j7pv25f6="">
+          <!-- Sección "Selecciona tu programa" -->
+          <section class="section-customizable">
+            <div class="container">
+              <div class="title-container" style="text-align: center; margin-bottom: 30px;">
+<h2 class="section-title" id="programas-titulo">Selecciona tu programa</h2>
+              </div>
+              
+              <div class="cards-section">
+               <div class="cards-container" id="programas-container">
+  <div class="loading">Cargando programas...</div>
+</div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Sección "Últimos Videos" -->
+          <section class="section-customizable">
+            <div class="container">
+              <div class="title-container" style="text-align: center; margin-bottom: 30px;">
+                <h2 class="section-title" id="videos-titulo">Últimos Videos</h2>
+              </div>
+              
+              <div class="videos-section">
+<div class="videos-list" id="videos-container">
+  <div class="loading">Cargando videos...</div>
+</div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+      
+      <div id="subscribe-modal" class="modal">
+        <div class="modal-content">
+          <span id="close-modal" class="close">×</span>
+          <h2>Suscríbete</h2>
+          <p>Recibe novedades y recursos directamente en tu correo.</p>
+          <form id="subscribe-form" name="subscribe" method="POST" data-netlify="true">
+            <input type="hidden" name="form-name" value="subscribe" />
+            <input type="email" name="email" id="email-input" placeholder="Tu correo electrónico" required="" />
+            <button type="submit" class="moze-formbutton">Enviar</button>
+          </form>
+        </div>
+      </div>
+      
+      <script type="module">
+        const n = document.getElementById("subscribe-btn"),
+          e = document.getElementById("subscribe-modal"),
+          d = document.getElementById("close-modal");
+        n?.addEventListener("click", () => {
+          e && (e.style.display = "flex");
+        });
+        d?.addEventListener("click", () => {
+          e && (e.style.display = "none");
+        });
+        window.addEventListener("click", (t) => {
+          t.target === e && e && (e.style.display = "none");
+        });
+      </script>
+      
+      <footer id="bottom">
+        <div id="footer">
+          <div id="social">
+            <!-- Facebook -->
+           <a href="#" target="_blank" id="facebook-link">
+  </a>
+<a href="#" target="_blank" id="instagram-link">
+  </a>
+<a href="#" target="_blank" id="youtube-link">
+  </a>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <!-- Script para cargar los datos desde el CMS -->
+    <script src="js/cms-content.js"></script>
+
+    <!-- Script para hacer funcional el carrusel de cards y la interacción de videos -->
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        // Funcionalidad de arrastre para la sección de cards
+        const cardsContainer = document.querySelector('.cards-container');
+        let isDown = false;
+        let startX;
+        let scrollLeft;
+
+        if (cardsContainer) {
+          cardsContainer.addEventListener('mousedown', (e) => {
+            isDown = true;
+            cardsContainer.classList.add('active');
+            startX = e.pageX - cardsContainer.offsetLeft;
+            scrollLeft = cardsContainer.scrollLeft;
+          });
+
+          cardsContainer.addEventListener('mouseleave', () => {
+            isDown = false;
+            cardsContainer.classList.remove('active');
+          });
+
+          cardsContainer.addEventListener('mouseup', () => {
+            isDown = false;
+            cardsContainer.classList.remove('active');
+          });
+
+          cardsContainer.addEventListener('mousemove', (e) => {
+            if (!isDown) return;
+            e.preventDefault();
+            const x = e.pageX - cardsContainer.offsetLeft;
+            const walk = (x - startX) * 2; // Ajusta la velocidad de desplazamiento
+            cardsContainer.scrollLeft = scrollLeft - walk;
+          });
+        }
+      });
+    </script>
+
+    <!-- Script para redirigir al admin si el usuario está autenticado -->
+    <script>
+      if (window.netlifyIdentity) {
+        window.netlifyIdentity.on("init", user => {
+          if (!user) {
+            window.netlifyIdentity.on("login", () => {
+              document.location.href = "/admin/";
+            });
+          }
+        });
+      }
+    </script>
+  </body>
+</html>

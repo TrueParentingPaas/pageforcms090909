@@ -1,0 +1,54 @@
+backend:
+  name: git-gateway
+  branch: main # O la rama principal de tu repositorio
+
+media_folder: static/img
+public_folder: /img
+
+collections:
+  - name: banner
+    label: Banner Principal
+    files:
+      - file: content/banner.json # Guarda los datos del banner en este archivo
+        label: Contenido del Banner
+        name: banner-content
+        fields:
+          - { label: "Título", name: "bigbar-h1", widget: "string" }
+          - { label: "Subtítulo", name: "bigbar-p", widget: "string" }
+          - { label: "Enlace del botón", name: "bigbar-a-href", widget: "string" }
+          - { label: "Texto del botón", name: "bigbar-a-text", widget: "string" }
+
+  - name: programas
+    label: Programas
+    folder: content/programas
+    create: true
+    slug: "{{slug}}"
+    format: json # Guarda cada programa como un archivo JSON
+    fields:
+      - { label: "Título", name: "card-title", widget: "string" }
+      - { label: "Descripción", name: "card-description", widget: "text" }
+      - { label: "Imagen", name: "card-image", widget: "image" }
+      - { label: "Enlace", name: "card-button-href", widget: "string" }
+      - { label: "Texto del botón", name: "card-button-text", widget: "string", default: "Explorar" }
+
+  - name: videos
+    label: Últimos Videos
+    folder: content/videos
+    create: true
+    slug: "{{slug}}"
+    format: json # Guarda cada video como un archivo JSON
+    fields:
+      - { label: "Título", name: "video-title", widget: "string" }
+      - { label: "Miniatura", name: "video-thumbnail", widget: "image" }
+      - { label: "Enlace", name: "video-link", widget: "string" }
+
+  - name: footer
+    label: Footer
+    files:
+      - file: content/footer.json # Guarda los enlaces del footer en este archivo
+        label: Enlaces de Redes Sociales
+        name: footer-links
+        fields:
+          - { label: "Facebook", name: "facebook", widget: "string" }
+          - { label: "Instagram", name: "instagram", widget: "string" }
+          - { label: "YouTube", name: "youtube", widget: "string" }
